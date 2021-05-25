@@ -43,16 +43,23 @@ header .form {
 header .form .input{
     margin-left: 20px;
     border-radius: 8px;
-    background-color: #FFF;
-    border: 1px solid #000;
+    background-color: white;
+    border: none;
     outline: none;
-    color: #666;
+    color: white;
     padding: 2px;
     width: 50%;
 }
 header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
+    background-color: white;
+    border: none;
+    color: white;
+    width: fit-content;
+}
+
+header button i {
+    background-color: none;
+    border: none;
     color: #666;
     width: fit-content;
 }
@@ -365,6 +372,7 @@ footer {
     div .form {
         display: flex;
         align-self: center;
+        width: 40%;
         /*display: block;*/
         
     }
