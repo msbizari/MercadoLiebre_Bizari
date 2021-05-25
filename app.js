@@ -28,4 +28,6 @@ app.get('/register', (req,res)=>{
     res.sendFile(__dirname + '/views/register.html');
 });
 
-app.listen(3500, () => console.log('servidor funcionando'));        
+app.listen(process.env.PORT || 3000, function () {
+    console.log('servidor corriendo en el puerto 3000');
+});        
