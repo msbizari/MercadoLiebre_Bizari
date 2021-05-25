@@ -1,0 +1,455 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb
+}
+
+/*paleta de colores:
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */ 
+
+
+header {
+    background-color: #EAC926;
+}
+
+h3 {
+    font-size: 24px;   
+    color: #666; 
+}
+
+p {
+    font-size: 12px;
+}
+
+.logo {
+    width: 50%;
+    padding: 10px;
+}
+
+header .form {
+    margin-left: 20px;
+    display: flex;
+}
+header .form .input{
+    margin-left: 20px;
+    border-radius: 8px;
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    width: 50%;
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: fit-content;
+}
+
+
+
+header .frase-header{
+    margin-left: 20px;
+    text-align: center;
+}
+/* para poner el menu en una linea horizontal?
+nav {
+    display: inline-block;
+}*/
+
+
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    /*display: inline-block;*/
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    padding: 15px;    
+}
+
+/* MAIN */
+
+main {
+    margin:0 auto;
+    width: 90%;
+}
+
+/*aca es donde le pongo los margenes al box de cada producto*/
+main section article {
+    /*border-radius: 25px;*/
+    background-color: white;
+    margin: 10px 0px;
+}
+
+main section article image {
+    width: 100%;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    color: #39b54a;
+    right: 20px;
+    top: -15px
+}
+
+main section h3 {
+    margin: 20px 0px;
+}
+
+article {
+    margin: 0 auto;
+    background-color: white;
+
+}
+
+main section div.products article i{
+    transition: transform 1s;
+}
+
+main section div.products article:hover i{
+    transform: rotate(-90deg);
+}
+
+.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+main section article:hover .description{
+    display: block;
+}
+
+.products {
+    margin: 0 auto;
+}
+
+.price {
+    font-size: 14px;
+    width: 30%;
+}
+
+.discount {
+    font-size: 11px;
+    color: #39b54a;
+    width: 70%;
+}
+
+.description {
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+    margin-top: 20px;
+    display: none;
+}
+
+/* LOGIN BODY*/
+
+/*main section {
+    text-justify: center;
+}*/
+.login-body{
+    display: block;
+}
+
+.login {
+    border: none;
+    font-size: 14px;
+    margin: 25px 0px;
+    
+    width: 75%;
+    border-radius: 5px;
+    background-color: white;
+    color: #666;
+    padding: 2px;
+    height: 25px;
+    justify-content: center;
+    align-content: center;
+}
+
+main section input{
+    border: none;
+    border-width: 0px;
+    outline: none;
+    /*width: 50%;*/
+}
+
+/*.login input[type='submit']:hover,*/
+
+.boton-login {
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 75%;
+    font-family: 'Roboto', sans-serif;
+    height: 35px;
+    margin-top: 20px    ;
+    
+}
+/*REGISTER BODY*/
+section .register-body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+.calendario {
+    font-family: 'Roboto', sans-serif;
+    margin: 15px 0px;
+    width: 100%;
+}
+
+.user-profile{
+    padding: 10px;
+}
+.user-profile label {
+    padding: 0px 10px;
+       
+}
+
+.interest{
+    padding: 10px;
+}
+
+.interest div{
+    padding-bottom: 15px;
+}
+
+.botones-juntos {
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 37.5%;
+    font-family: 'Roboto', sans-serif;
+    height: 35px;
+    margin-top: 20px;    
+    display: inline-block;
+    justify-content: center;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    color: #666;
+    padding: 20px
+}
+
+.footer-icon i {
+    color:#1259c3;
+    font-size: 25px;
+}
+
+.footer-icon {
+    margin: 40px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 361px){
+    
+    main section article {
+        display: block;
+        }
+        /*border-radius: 25px;*/
+        
+        /* antiguo efecto de bordes con sombras
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);*/
+
+    .price{
+        width: 50%;
+    }
+        
+    .discount {
+        width: 50%;
+    }
+    
+    div .form {
+        display: flex;
+    }
+    
+
+    div.products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;        
+        justify-content: space-between;        
+        align-items: flex-start;
+    }
+
+    div.products article {
+        width: 45%;
+    }
+
+    /*.description {
+        display: none;
+    }*/
+
+    /*nav {
+        display: none;
+    }*/
+}
+
+
+@media (min-width: 769px) {
+    
+    .logo {
+        width: 25%;
+        padding: 10px;
+    }
+
+    .frase-header {
+        margin-right: 20px;
+    }
+
+    .top-header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-self: center;
+    }
+
+    header .form .input{
+        width: 100%;
+    }
+
+    div .form {
+        display: flex;
+        align-self: center;
+        /*display: block;*/
+        
+    }
+
+    div .frase-header{
+        align-self: center;
+    }
+    
+    div.burger-menu{
+        display: none;
+    }
+
+    /*nav {
+        display: inline-block;
+    }*/
+
+
+    header nav {
+        font-size: 18px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin:auto;
+        margin-top: 10px;
+        ;
+    }
+    
+    ul {
+        display: inline-block;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .li-left {
+        /*float: left;*/
+        display: inline-block;
+        text-align: left;
+        padding: 0 10px;
+    }
+
+    .li-right {
+        /*float: right;*/ 
+        display: inline-block;
+        text-align: right;
+        padding: 0 10px;
+    }
+
+
+    div.products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;        
+        justify-content: space-between;        
+        align-items: flex-start;
+    }
+
+    div.products article {
+        width: 22%;
+    }
+
+    
+    footer {
+        display: flex;
+    }
+
+    footer.div {
+        width: 33%;
+        
+    }
+    
+    .footer-icon i:hover{
+        color: #39b54a;
+        transition: 450ms;
+    }
+    
+    /*Amarillo: #EAC926;
+    Azul: #03264C;
+    Celeste: #1259c3;
+    Verde: #39b54a*/
+
+    h5 {
+        color: #666;
+        margin: 0px 0px 10px 10px;
+    }
+}
+
